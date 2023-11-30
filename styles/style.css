@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro:ital@1&family=Montserrat:wght@600&family=Roboto+Mono:wght@400;500&display=swap');
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(/assets/background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 2000px;
+}
+
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    align-items:center; 
+    justify-content: space-around; 
+}
+
+header{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    padding: 25px; 
+    opacity: 0.9;
+    
+}
+
+
+.logo img{
+    width: 160px;
+    cursor: pointer;
+    
+
+
+}
+
+
+.sociais{
+    width: 30%;
+}
+
+.menu{
+    width: 50%;
+}
+
+.menu nav a{
+    color: #ffffff;
+    text-decoration: none;
+    padding-right: 50px;
+    font-size: 25px;
+    position: relative;
+
+}
+
+.menu nav a::after{
+    content: " ";
+    width: 0px;
+    height: 4px;
+    background-image:linear-gradient(45deg, #000000, #993996);
+    position: absolute;
+    top: 27px;
+    left: 0;
+    transition: width 0.5;
+
+}
+
+.menu nav a:hover::after{
+    width: 60px;
+}
+
+.sociais button{
+    width: 60px;
+    height: 60px; 
+    background-image: linear-gradient(45deg, #f5d0f5, #450843);
+    border: none;
+    margin-right: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.sociais button i{
+    font-size: 30px;
+    color: #ffffff;
+
+}
+
+.cookies{
+    width: 80%; 
+    background-color: white;
+    position: fixed;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: 'Roboto Mono', monospace;
+    border-radius: 15px;
+    display: none;
+     }
+
+
+
+ .cookies .cookiestxt{
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    padding: 20px;
+
+ }
+
+ .cookies .cookiesbtn{
+    margin-left: 500px;
+ }
+
+ .cookies .cookiesbtn button{
+    background-color: #0F0F0F;
+    color: white;
+    font-weight: 700px;
+    font-size: 18px;
+    padding: 10px 40px;
+    cursor: pointer;
+    border: none;
+    transition: 0.5;
+ }
+
+ .cookies .cookiesbtn button:hover{
+    transform: scale(0.9);
+ }
+
+
+
+
+ 
